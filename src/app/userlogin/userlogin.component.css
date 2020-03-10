@@ -17,16 +17,16 @@ form header {
     background: #ff3838;
     padding: 30px 20px;
     color: white;
-    font-size: 1.2cm;
+    font-size: 1.2em;
     font-weight: 600;
     border-radius: 10px 10px 0 0;
 }
 
-form label span {
+form span {
     color: #FF3838;
-    font-size: 2cm;
+    font-size: 2em;
     position: absolute;
-    left: 2.3cm;
+    left: 2.3em;
     top: -10px;
 }
 

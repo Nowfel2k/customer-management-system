@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Http, Response, Headers, RequestOptions } from '@angular/common/http';
-import 'rxjs/add/operator/map';
+import { HttpClientModule } from '@angular/common/http';
+// import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-mainpage',
@@ -13,7 +13,7 @@ export class MainpageComponent implements OnInit {
   formdata;
   customerdata;
 
-  constructor(private http: Http) { }
+  constructor() { }
 
   stateCtrl: FormControl;
 

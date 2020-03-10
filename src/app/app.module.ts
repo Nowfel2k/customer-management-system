@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,10 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     // HttpModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    // RouterModule.forRoot(appRoutes),
+    // MdTableModule,
+    // MdInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
