@@ -20,7 +20,7 @@
 </div> -->
 
 
-<div class="form_container">
+<!-- <div class="form_container">
     <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
     <header>Login</header>
     <label>Username <span>*</span></label>
@@ -31,5 +31,24 @@
     <div class="help">Use upper and lowercase lettes as well</div>
     <button [disabled]="!formdata.valid" value="Login">Login</button>
     </form>
-    </div>
+    </div> -->
     
+
+    <div class="form">
+        <header>Login</header>
+        
+        
+        <div class = "inputs">
+            <label>Username <span>*</span></label>
+            <input #box1 type="text" name="uname" (blur) = "getUserName(box1.value);" />
+            <div class="help">At least 6 character</div>
+        </div>
+
+        <div class = "inputs">
+            <label>Password <span>*</span></label>
+            <input #box2 type="password" class="fortextbox" name="passwd" (blur) = "getPassword(box2.value);"/><br>
+        </div>
+        
+        <button value="Login" (click) = "checkAuthentication();">Login</button>
+        
+    </div>
